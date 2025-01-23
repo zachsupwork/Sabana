@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabana Construction with AI Agent</title>
+    <title>Main Page with AI Agent</title>
     <style>
         body, html {
             margin: 0;
@@ -20,51 +20,24 @@
             height: 100%;
             border: none;
         }
-        .top-right-container {
+        .buy-now-icon {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 1001;
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            text-align: right;
-            width: 250px;
-        }
-        .top-right-container a {
-            display: block;
-            margin: 5px 0;
-            text-decoration: none;
-            color: #007BFF;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
             font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
-        .top-right-container a:hover {
-            text-decoration: underline;
-        }
-        .top-right-container h3 {
-            margin: 0 0 5px 0;
-            font-size: 16px;
-        }
-        .top-right-container small {
-            font-size: 12px;
-            color: #555;
-        }
-        .bottom-overlay {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            background-color: black;
-            z-index: 1000;
-        }
-        #convai-widget {
-            position: fixed;
-            bottom: 70px;
-            right: 20px;
-            z-index: 1002;
+        .buy-now-icon:hover {
+            background-color: #218838;
         }
     </style>
 </head>
@@ -72,19 +45,8 @@
     <!-- Full-page iframe -->
     <iframe src="https://sabanaconstruction.com/" title="Sabana Construction Website"></iframe>
     
-    <!-- Contact Info and Buy Now Section -->
-    <div class="top-right-container">
-        <h3>Zachary's AI Services</h3>
-        <a href="https://calendly.com/booking-appointments-calendly/booking-appointments-discussion" target="_blank">Schedule a Call</a>
-        <a href="mailto:advancedai@example.com">Email: advancedai@example.com</a>
-        <a href="tel:+14389326669">Phone: +1 438-932-6669</a>
-        <a href="https://yourwebsite.com" target="_blank">Visit My Website</a>
-        <a href="https://buy.stripe.com/test_signuppage" target="_blank" style="font-weight: bold; color: #28a745;">Buy Now</a>
-        <small>Powered by Zachary's AI</small>
-    </div>
-
-    <!-- Black overlay at the bottom -->
-    <div class="bottom-overlay"></div>
+    <!-- Buy Now Button -->
+    <a href="contact.html" class="buy-now-icon">Buy Now</a>
 
     <!-- AI Agent Widget -->
     <div id="convai-widget">
