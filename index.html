@@ -14,29 +14,29 @@
         }
         iframe {
             position: fixed;
-            top: 0;
+            top: 50px; /* Push down for Buy Now button space */
             left: 0;
             width: 100%;
-            height: 100%;
+            height: calc(100% - 50px); /* Adjust height to exclude button */
             border: none;
         }
-        .buy-now-icon {
+        .buy-now-center {
             position: fixed;
-            top: 20px;
-            right: 20px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 1001;
             background-color: #28a745;
             color: white;
-            border: none;
-            padding: 10px 15px;
+            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 14px;
-            text-decoration: none;
+            font-size: 16px;
             text-align: center;
+            text-decoration: none;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
-        .buy-now-icon:hover {
+        .buy-now-center:hover {
             background-color: #218838;
         }
     </style>
@@ -45,8 +45,8 @@
     <!-- Full-page iframe -->
     <iframe src="https://sabanaconstruction.com/" title="Sabana Construction Website"></iframe>
     
-    <!-- Buy Now Button -->
-    <a href="contact.html" class="buy-now-icon">Buy Now</a>
+    <!-- Buy Now Button in Top Center -->
+    <a href="contact.html" class="buy-now-center">Buy Now</a>
 
     <!-- AI Agent Widget -->
     <div id="convai-widget">
