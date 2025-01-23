@@ -10,37 +10,35 @@
             height: 100%;
             overflow: hidden;
         }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
         iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             border: none;
         }
-        #convai-widget {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        #overlay {
-            position: fixed;
+        .bottom-overlay {
+            position: absolute;
             bottom: 0;
-            right: 0;
-            width: 100px; /* Adjust based on the attribution size */
-            height: 20px;  /* Adjust based on the attribution size */
-            background-color: white; /* Match this to your page's background */
-            z-index: 1001; /* Ensure it's above the Convai widget */
+            left: 0;
+            width: 100%;
+            height: 50px; /* Adjust the height as needed */
+            background-color: black;
+            z-index: 10;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://sabanaconstruction.com/"></iframe>
+    <div class="iframe-container">
+        <iframe src="https://sabanaconstruction.com/" title="Sabana Construction Website"></iframe>
+        <div class="bottom-overlay"></div>
+    </div>
     <div id="convai-widget">
         <elevenlabs-convai agent-id="uHZGi1ZXgD2G1pQYBQr2"></elevenlabs-convai>
         <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
     </div>
-    <div id="overlay"></div>
 </body>
 </html>
