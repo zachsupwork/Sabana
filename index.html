@@ -24,6 +24,15 @@
             right: 20px;
             z-index: 1000;
         }
+        #overlay {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 200px; /* Adjust based on the attribution size */
+            height: 50px;  /* Adjust based on the attribution size */
+            background-color: white; /* Match this to your page's background */
+            z-index: 1001; /* Ensure it's above the Convai widget */
+        }
     </style>
 </head>
 <body>
@@ -32,5 +41,6 @@
         <elevenlabs-convai agent-id="uHZGi1ZXgD2G1pQYBQr2"></elevenlabs-convai>
         <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
     </div>
+    <div id="overlay"></div>
 </body>
 </html>
